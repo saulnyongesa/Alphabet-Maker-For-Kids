@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Maker</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="letter">
+    <h1>Y</h1>
+</div>
+<div id="canvas"></div>
+<div class="button-bar">
+    <button onclick="createBar('vertical', 'red')" style="background-color: red">Vertical</button>
+    <button onclick="createBar('horizontal', 'blue')" style="background-color: darkblue">Horizontal</button>
+    <button onclick="createBar('slant-forward', 'green')" style="background-color: green">Slant Forward</button>
+    <button onclick="createBar('slant-backward', 'yellow')" style="background-color: yellow">Slant Backward</button>
+    <button onclick="createBar('circle', 'black')" style="background-color: black">Circle</button>
+</div>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
